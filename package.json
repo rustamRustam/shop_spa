@@ -1,6 +1,7 @@
 {
   "name": "shop_spa",
   "version": "1.0.0",
+  "homepage": "https://rustamrustam.github.io/shop_spa",
   "description": "",
   "main": "index.js",
   "dependencies": {
