@@ -1,0 +1,39 @@
+.orderData {
+  .orderTitle {
+    text-align: center;
+  }
+  .orderProcess {
+    text-align: center;
+    .orderProcessStep {
+      display: inline-block;
+      background-color: #b3b0b0;
+      width: 30%;
+      border-left: solid 1px black;
+      border-right: solid 1px black;
+      &.full {
+        background-color: pink;
+      }
+      &.current {
+        background-color: #ec536e;
+      }
+    }
+  }
+  .orderSteps {
+    height: 30px;
+    .orderStep{
+      display: inline-block;
+      &.Unde {
+        float: left;
+      }
+      &.Next {
+        float: right;
+      }
+    }
+
+    .divButton .step-button {
+      background-color: transparent;
+      color: black;
+      border: solid 2px orange;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+body {
+  min-width: 360px;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: left;
+}
+
+.shopHeader .shopEmblem {
+  background-image: url("./img/shop_icon.jpg");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+}
+
+.shopHeader .shopTitle {
+  padding: 0 8px;
+}
+
+.shopHeader .shopEmblem,
+.shopHeader .shopTitle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  line-height: 36px;
+  margin: 4px 8px;
+}
+
+.line>div {
+  display: inline-block;
+  min-width: 120px;
+}
+
+.text_dots{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+

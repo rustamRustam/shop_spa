@@ -1,0 +1,69 @@
+.containerInput {
+    position: relative;
+    background-color: white;
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.containerInput .containerInputInput {
+    height: 36px;
+    line-height: 36px;
+
+    background-color: inherit;
+    box-sizing: border-box;
+
+    height: inherit;
+    width: 100%;
+
+    padding: 0 8px;
+    text-overflow: ellipsis;
+
+    border: solid 1px gray;
+    border-radius: 4px;
+
+    overflow: hidden;
+}
+
+.containerInput .containerInputValidText {
+    color: red;
+    font-size: 72%;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.containerInput.showValidText .containerInputValidText {
+    opacity: 1;
+
+}
+
+.containerInput .containerInputValidText span {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    min-width: 100%;
+}
+
+.containerInput.showValidText .containerInputValidText span {
+    animation: go 8s infinite linear;
+    animation-delay: 2s;
+}
+
+@keyframes go{
+    0% {
+        transform: translateX(0);
+        left: 0;
+    }
+    50% {
+        transform: translateX(-100%);
+        left: 100%;
+    }
+    100% {
+        transform: translateX(0);
+        left: 0;
+    }
+}

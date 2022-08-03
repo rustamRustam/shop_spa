@@ -1,0 +1,35 @@
+.product {
+  border: 2px solid gray;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 8px;
+
+  display: grid;
+  grid-template-columns: 1fr 134px;
+
+  .blockRem {
+    margin-top: 8px;
+    .countInCart {
+      margin-top: 2px;
+      text-align: center;
+      font-size: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .product {
+    display: block;
+    .propductButton {
+      display: inline-block;
+      width: 100%;
+      &>.divButton {
+        float: left;
+      }
+      &>.blockRem {
+        margin-top: 0;
+        float: right;
+      }
+    }
+  }
+}

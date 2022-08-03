@@ -1,0 +1,38 @@
+.cartData {
+  margin: 8px;
+  .cartTotal {
+    text-align: right;
+    margin: 8px;
+    font-weight: bold;
+    .total {
+      font-size: 140%;
+    }
+  }
+
+  .cartEmpty {
+    text-align: center;
+    font-weight: bold;
+    font-size: 140%;
+  }
+
+  .divButton .place-order-button {
+    background-color: #707;
+    color: white;
+  }
+
+  .cartEmpty {
+    margin-bottom: 60px;
+  }
+
+  .divButton .to-products-button {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+  }
+
+  &.empty .divButton {
+    text-align: right;
+  }
+
+}
+

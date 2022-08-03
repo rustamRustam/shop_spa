@@ -1,0 +1,16 @@
+.componentBuyer {
+  padding: 8px;
+  .lineBuyer {
+    margin: 8px 0;
+    &>span,
+    &>div {
+      display: inline-block;;
+      vertical-align: middle;
+    }
+
+    &>span {
+      min-width: 110px;
+
+    }
+  }
+}
