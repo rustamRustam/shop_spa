@@ -47,6 +47,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
+      template: './src/card.html',
       template: './src/index.html',
       favicon: "./src/shop_icon.jpg"
     }),
