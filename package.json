@@ -5,7 +5,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.2",
@@ -21,6 +20,7 @@
     "@types/react-dom": "^18.0.6",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "sass": "^1.53.0",
