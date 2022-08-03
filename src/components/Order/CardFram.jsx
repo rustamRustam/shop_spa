@@ -11,7 +11,8 @@ export default function CardFram(props) {
     const clickButton = ()=>{
       console.log('_button Click');
       if (iframeDoc) {
-        console.log('Card data_card',iframeDoc.data_card);
+        console.log('iframeDoc Dostali');
+        // console.log('Card data_card',iframeDoc.data_card);
       }
     }
 
@@ -19,7 +20,9 @@ export default function CardFram(props) {
       iframeDoc = cardIfram.current.contentWindow.document;
 
       _button = iframeDoc.getElementsByClassName("card-form__button")[0];
-      _button.addEventListener('click', clickButton);
+      if (_button) {
+        _button.addEventListener('click', clickButton);
+      }
 
     }
 
@@ -36,6 +39,6 @@ export default function CardFram(props) {
 
 
   return (
-    <iframe ref={cardIfram} src="/card.html" width="100%" height="500px" />
+    <iframe ref={cardIfram} src="./card.html" width="100%" height="500px" />
   );
 };
