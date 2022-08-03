@@ -5,6 +5,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
+    publicPath: './public/'
   },
   resolve: {
     modules: [path.join(__dirname, 'src'), 'node_modules'],
@@ -47,7 +48,6 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './src/card.html',
       template: './src/index.html',
       favicon: "./src/shop_icon.jpg"
     }),
